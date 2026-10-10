@@ -1,4 +1,4 @@
-# HDD Sector Diagnostic (Windows / C++17)
+# HDD Sector Diagnostic 
 >>>A hobby project
 
 
