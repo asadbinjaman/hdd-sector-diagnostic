@@ -9,7 +9,7 @@ A conservative native Windows physical-drive scanner. The current implementation
 
 ## Build
 
-Requirements: Windows 10/11, Visual Studio 2022 Build Tools or Visual Studio with the **Desktop development with C++** workload, and CMake 3.20+.
+Requirements: Windows 10/11, Visual Studio Code and MinGW-w64 14.0.0 [This build was compiled with GCC 16.1.0 and packaged on 2026-07-30.].
 
 From a Developer PowerShell in this directory:
 
@@ -18,7 +18,7 @@ cmake -S . -B build -A x64
 cmake --build build --config Release
 ```
 
-Executable: `build\Release\hdddiag.exe`.
+Executable: `build\hdddiag.exe`.
 
 ## Usage
 
@@ -27,13 +27,13 @@ Run PowerShell or Command Prompt **as Administrator**.
 List accessible physical drives and reported identity:
 
 ```powershell
-.\build\Release\hdddiag.exe --list
+.\build\hdddiag.exe --list
 ```
 
 Read-only scan (logs must be on a different physical disk):
 
 ```powershell
-.\build\Release\hdddiag.exe --scan 2 --logs E:\hdddiag-logs
+.\build\hdddiag.exe --scan 2 --logs E:\hdddiag-logs
 ```
 
 The program prints model, serial, capacity, and logical sector size before scanning. Confirm the disk number carefully; never assume `PhysicalDrive2` is the intended disk.
