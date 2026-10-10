@@ -1,0 +1,3 @@
+C:/hdd_sector_diagnostic/hdd_sector_diagnostic/build/CMakeFiles/hdddiag.dir
+C:/hdd_sector_diagnostic/hdd_sector_diagnostic/build/CMakeFiles/edit_cache.dir
+C:/hdd_sector_diagnostic/hdd_sector_diagnostic/build/CMakeFiles/rebuild_cache.dir

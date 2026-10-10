@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/hdd_sector_diagnostic/hdd_sector_diagnostic/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
