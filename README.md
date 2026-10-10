@@ -18,7 +18,7 @@ cmake -S . -B build -A x64
 cmake --build build --config Release
 ```
 
-Executable: `build\hdddiag.exe`.
+Executable: `hdddiag.exe`.
 
 ## Usage
 
@@ -27,13 +27,13 @@ Run PowerShell or Command Prompt **as Administrator**.
 List accessible physical drives and reported identity:
 
 ```powershell
-.\build\hdddiag.exe --list
+.\hdddiag.exe --list
 ```
 
 Read-only scan (logs must be on a different physical disk):
 
 ```powershell
-.\build\hdddiag.exe --scan 2 --logs E:\hdddiag-logs
+.\hdddiag.exe --scan 2 --logs E:\hdddiag-logs
 ```
 
 The program prints model, serial, capacity, and logical sector size before scanning. Confirm the disk number carefully; never assume `PhysicalDrive2` is the intended disk.
